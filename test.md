@@ -20,12 +20,25 @@ https://www.arxiv-vanity.com/papers/1712.08394/
 
 ---
 
+## 先行研究と比べて何がすごい？
+
+* Unity3Dを使うことにより、正確（主観的でない）で効率的
+* 人がアノテーションするときの問題
+    * ビデオ画像データセットのアノテーションは時間がかかる。間違えやすい
+    * 専門家はsparse
+    * 意見が一致しないとき、どう対応するか
+    * アノテーションは時間がかかる30-60分
+* [virtual KITTI](http://www.europe.naverlabs.com/Research/Computer-Vision/Proxy-Virtual-Worlds)は、拡張できない
+* 多くのデータセットはセマンティックセグメンテーションアノテーションを提供していない
+
+---
+
 ## どうやって有効だと検証した？
 * 車の屋根に載せたカメラ
-!(https://arxiv-sanity-sanity-production.s3.amazonaws.com/render-output/419252/x7.png)
+![車載カメラ](https://arxiv-sanity-sanity-production.s3.amazonaws.com/render-output/419252/x7.png)
 
 * 監視カメラ
-!(https://arxiv-sanity-sanity-production.s3.amazonaws.com/render-output/419252/x8.png)
+![監視カメラ](https://arxiv-sanity-sanity-production.s3.amazonaws.com/render-output/419252/x8.png)
 
 ---
 
@@ -39,13 +52,9 @@ https://www.arxiv-vanity.com/papers/1712.08394/
 * 人工的なシーンは、Unity3Dに取り込まれ、レンダリングされる
 * Unity3Dは環境条件の制御のために使われる
 
-![Pipeline for generating the ParallelEye dataset with OpenStreetMap, CityEngine, and Unity3D.](https://www.arxiv-vanity.com/papers/1712.08394/)
+![Pipeline for generating the ParallelEye dataset with OpenStreetMap, CityEngine, and Unity3D.](https://arxiv-sanity-sanity-production.s3.amazonaws.com/render-output/419252/x3.png)
 
 
-
-+ Experiments/Methods 等で読んだ内容を書く。
-+ リストで2～4項目程度
-+ サブリスト組み合わせてもOK
 
 ---
 
@@ -56,18 +65,6 @@ Discussionなし。
 * ParalellEyeデータセットを使って学習したらうまくいく？
 
 
----
-
-## 先行研究と比べて何がすごい？
-
-* Unity3Dを使うことにより、正確（主観的でない）で効率的
-* 人がアノテーションするときの問題
-    * ビデオ画像データセットのアノテーションは時間がかかる。間違えやすい
-    * 専門家はsparse
-    * 意見が一致しないとき、どう対応するか
-    * アノテーションは時間がかかる30-60分
-* [virtual KITTI](http://www.europe.naverlabs.com/Research/Computer-Vision/Proxy-Virtual-Worlds)は、拡張できない
-* 多くのデータセットはセマンティックセグメンテーションアノテーションを提供していない
 
 
 ---
@@ -76,9 +73,9 @@ Discussionなし。
 
 
 * [Joint Semantic Segmentation and 3D Reconstruction from Monocular Video](https://smartech.gatech.edu/bitstream/handle/1853/53675/HybridSFM-ECCV14.pdf?sequence=1&isAllowed=y)
-- アノテーション時間に関して書いてある？
+    - アノテーション時間に関して書いてある？
 * [Semantic Instance Annotation of Street Scenes by 3D to 2D Label Transfer](http://www.cvlibs.net/publications/Xie2016CVPR.pdf)
-- "curse of dataset annoation"のグラフあり
+    - "curse of dataset annoation"のグラフあり
 
 
 =======================
